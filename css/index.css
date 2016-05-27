@@ -1,0 +1,264 @@
+*{
+	webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+
+}
+@media all and (max-width: 1200px) { /* screen size until 1200px */
+    body {
+        font-size: 1.5em; /* 1.5x default size */
+    }
+}
+@media all and (max-width: 1000px) { /* screen size until 1000px */
+    body {
+        font-size: 1.2em; /* 1.2x default size */
+        }
+    }
+@media all and (max-width: 500px) { /* screen size until 500px */
+    body {
+        font-size: 0.8em; /* 0.8x default size */
+      }
+    }
+p, h1, h2, h3, h4, h5, h6, b, li {
+  	margin: 0;
+  	padding: 0;
+  	font-family: monospace;
+  }
+
+.landingp {
+    background: url(../img/bg.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+nav {
+	padding-top: 50px;
+	z-index: 2;
+	background-color: transparent;
+
+}
+
+nav .logo {
+	left: 50;
+}
+
+nav ul {
+	list-style-type: none;
+	padding:20px 0px;
+	float: right
+}
+nav ul li {
+	display: inline-block;
+	padding: 0px 30px;
+	cursor: pointer;
+	font-size: 1.5em;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul li a {
+	color: #DFF0D8;
+	font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 600
+}
+
+nav ul li a:hover, a:focus {
+	text-decoration: none;
+	color: rgba(223, 240, 216, 0.62)
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #27ae60;
+	-webkit-transition: width .3s;
+	transition: width .3s;
+	margin-top: 10px
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+
+.heading {
+	text-align: center;
+	padding: 0px 30px 0px 30px;
+	font-size: 2.1em;
+	/* font-family: 'Ubuntu', sans-serif; */
+	/* font-family: 'Titillium Web', sans-serif; */
+	/* font-family: 'Raleway', sans-serif; */
+	font-family: 'Poiret One', cursive;
+	z-index: 2;
+}
+.heading span:nth-child(even) {
+	font-size: calc(100% + .6em);
+}
+.heading span:nth-child(odd) {
+	color: #16a085;
+	font-weight: bolder;
+}
+
+@keyframes movinArrow {
+	0% {
+		top: 90vh
+	}
+	100% {
+		top: 93vh
+	}
+}
+
+.landingp + .fa-angle-down {
+	font-size: 40px;
+	color: #16a085;
+    position: absolute;
+    animation: movinArrow .9s infinite;
+    left: 50vw;
+    right: 50vw;
+    transition: all 1s ease-in-out
+}
+
+canvas { 
+	display: block; 
+	vertical-align: bottom; 
+}
+
+#particles-js { 
+	position:absolute; 
+	width: 100%; 
+	height: 100%;
+	z-index: 1 
+} 
+
+/* How does it work section */
+div[data-border="true"] {
+	border-bottom: 2px solid #16a085 ;
+	width: 7%;
+	margin: auto;
+	display: block;
+	padding: 10px 0px;
+}
+.hwork {
+	margin-top: 50px;
+	text-align: center;
+}
+.hwork h2 {
+	color: #34495e;
+	 font-family: 'Raleway', sans-serif;
+
+}
+
+.hwork h2 + p {
+	color: rgb(113, 127, 134);
+	 font-family: 'Ubuntu', sans-serif; 
+
+}
+
+.hwork div[data-border="true"] ~ div {
+	padding: 30px 0px;
+	cursor: default;
+}
+
+.hwork div[data-border="true"] ~ div > h5 {
+	padding: 0px 10px;
+	color: #7f8c8d;
+	font-family: 'Ubuntu', sans-serif; 
+
+}
+
+
+.hwork div[data-border="true"] ~ div > i {
+	font-size: 40px;
+	border: 1px solid #16a085;
+	color: rgb(113, 127, 134);
+	border-radius: 50%;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+
+.hwork div[data-border="true"] ~ div:hover {
+	box-shadow: 0px 22px 50px -20px rgba(0,0,0,0.2)    
+}
+
+.hwork div[data-border="true"] ~ div:hover > i {
+	color: #16a085;
+	border-color: rgb(113, 127, 134);
+	transform: rotateY(360deg);
+}
+
+
+
+
+
+
+
+
+
+/* get started section */
+.getstarted {
+	margin-top: 50px;
+	text-align: center;
+	background-color: #F3EFEF;
+}
+.getstarted .container {
+	padding: 40px 0px
+}
+.getstarted h2 {
+	color: #34495e;
+	font-family: 'Raleway', sans-serif; 
+
+}
+
+.getstarted div[data-border="true"] + h5 {
+	margin-top: 30px;
+	color: #7f8c8d;
+	font-family: 'Ubuntu', sans-serif;
+	line-height: 1.5em;
+	font-size: 14px 
+}
+
+.getstarted div[data-border="true"] + h5 + button {
+	margin-top: 30px;
+	border-radius: 20px;
+	color: white;
+	background-color: rgb(113, 127, 134);
+	font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif
+}
+
+.getstarted div[data-border="true"] + h5 + button:hover {
+	border-radius: 0px
+}
+
+
+/* Scroll to top */
+.scrollToTop{
+	color: #FFFFFF;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 38px;
+    cursor: pointer;
+    background-color: rgb(22, 160, 133);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+}
+
+.scrollToTop:hover {
+	color: #bdc3c7;
+    border-radius: 0px;
+}
