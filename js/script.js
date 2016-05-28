@@ -74,27 +74,9 @@
 $(function(){
 
     $("#sContainer").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
   arrows: false,
-  fade: true,
-  autoplay: true,
-  adaptiveHeight: true,
-  mobileFirst: true,
-  draggable: true,
   infinite: true,
   pauseOnHover: true,
-  swipe: true,
-  
-});
-$('.slide-items').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  asNavFor: '.slideCir',
-  dots: true,
-  centerMode: true,
-  focusOnSelect: true,
-  mobileFirst: true
 });
   
 
