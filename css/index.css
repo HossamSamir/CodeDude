@@ -242,6 +242,90 @@ div[data-border="true"] {
 }
 
 
+
+
+
+
+
+
+/* latest project section */
+.lprojects {
+	text-align: center;
+	background: url(../img/lbg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.lprojects .container {
+	padding: 40px 0px;
+
+}
+.lprojects h2 {
+	color: #FFF;
+	font-family: 'Raleway', sans-serif; 
+
+}
+
+.lprojects .headerphoto {
+	margin-top: 50px;
+	height: 24em;
+	cursor: move
+}
+
+.lprojects .headerphoto img {
+	width: 20em;
+	height: 20em;
+	border-radius: 50%;
+	margin: auto;
+	border: 2px solid rgb(22, 160, 133);
+	padding: 3px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 23px 11px -10px
+
+}
+
+.lprojects .projectdet {
+	margin-top: 30px;
+	cursor: move
+}
+
+.lprojects .projectdet h4 {
+	color: #FFF;
+	font-size: 20px;
+	margin-bottom: 10px;
+	font-family: 'Poiret One', cursive;
+
+}
+
+.lprojects .projectdet h4 span:nth-child(3) {
+	color: #eee;
+	font-size: larger;
+}
+
+.lprojects .projectdet p {
+	color: #FFF;
+	margin-bottom: 10px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	opacity: .7
+}
+
+.lprojects .projectdet p + button {
+	color: #FFF;
+	background-color: transparent;
+	margin-bottom: 10px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	opacity: .7;
+	margin: 10px 0px
+}
+
+.lprojects .controlerss i {
+	font-size: 20px;
+	color: #FFF
+}
+
+
 /* Scroll to top */
 .scrollToTop{
 	color: #FFFFFF;
@@ -262,3 +346,5 @@ div[data-border="true"] {
 	color: #bdc3c7;
     border-radius: 0px;
 }
+
+
