@@ -201,11 +201,6 @@ div[data-border="true"] {
 
 
 
-
-
-
-
-
 /* get started section */
 .getstarted {
 	margin-top: 50px;
@@ -240,11 +235,6 @@ div[data-border="true"] {
 .getstarted div[data-border="true"] + h5 + button:hover {
 	border-radius: 0px
 }
-
-
-
-
-
 
 
 
@@ -457,6 +447,32 @@ div[data-border="true"] {
 	}
 }
 
+/* get started second section */
+.getstarted2 {
+	text-align: center;
+	background-color: #F3EFEF;
+}
+.getstarted2 .container {
+	padding: 40px 0px
+}
+.getstarted2 h2 {
+	color: #34495e;
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px
+
+}
+
+.getstarted2 button {
+	margin-top: 30px;
+	border-radius: 20px;
+	color: white;
+	background-color: rgb(113, 127, 134);
+	font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif
+}
+
+.getstarted2 button:hover {
+	border-radius: 0px
+}
 
 
 
@@ -480,5 +496,3 @@ div[data-border="true"] {
 	color: #bdc3c7;
     border-radius: 0px;
 }
-
-
